@@ -1,5 +1,23 @@
 # Getting Started with Create React App
 
+# Time Estimate For Project 
+
+- 1. `Display Images`
+    - Time needed to complete: 3 hrs
+    - Start Time: 1pm
+    - End Time: 5pm
+    - Actual Time: 4pm
+- 2. `Allow users to vote for their favorite beast`
+    - Time needed to complete: 3 hrs
+    - Start Time: 1pm
+    - End Time: 5pm
+    - Actual Time: 4pm
+- 3. `Bootstrap`
+    - Time needed to complete: 3 hrs
+    - Start Time: 1pm
+    - End Time: 5pm
+    - Actual Time: 4pm
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

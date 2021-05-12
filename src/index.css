@@ -7,6 +7,17 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+#hornedBeast {
+  margin: 37%;
+  text-align: center;
+}
+
+#header {
+  margin-left: 38%;
+}
+
+
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;

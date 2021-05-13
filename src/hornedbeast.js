@@ -2,6 +2,7 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Button from 'react-bootstrap/Button';
 import { Card } from 'react-bootstrap';
+import hornedBeastModal from './modal.js';
 
 class hornedbeast extends React.Component {
   constructor(props) {
@@ -26,6 +27,8 @@ class hornedbeast extends React.Component {
         <Card.Text>{this.props.title} has {this.state.count} Votes</Card.Text>
         <Button variant="success" onClick={this.increaseVoteCount}>Increase Vote</Button>
         </Card>
+        <hornedBeastModal
+        
       </div>
     )
   }

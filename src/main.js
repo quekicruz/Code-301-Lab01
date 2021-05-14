@@ -1,14 +1,36 @@
 import React from 'react';
 // import 'bootstrap/dist/css/bootstrap.min.css';
 import HornedBeast from './hornedbeast.js'
+import HBForm from './hbform.js'
 
 class Main extends React.Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
-      count: 0,
+      findHorns: 0,
+      hornedBeastData: this.hornedBeastData,
     }
   }
+
+  filterData = () => {
+    const filterBeast = (beast) => {
+      if(beast.horns === this.state.findHorns) {
+        return true;
+      }
+      return false;
+    }
+    if(this.state.findHorns){
+      this.setState(this.state.hornedBeastData.filter(filterBeast))
+    }else{
+      this.setState(this.state.hornedBeastData);
+    }
+  }
+  handleHorns = (e) => {
+    let searchValue = parseInt(e.target.value);
+    this.setState({ searchHorn: searchValue }, this.filterData);
+  }
+
+
 
  hornedBeastData = [{
     "image_url": "http://3.bp.blogspot.com/_DBYF1AdFaHw/TE-f0cDQ24I/AAAAAAAACZg/l-FdTZ6M7z8/s1600/Unicorn_and_Narwhal_by_dinglehopper.jpg",
@@ -151,17 +173,19 @@ class Main extends React.Component {
     "horns": 100
   }
 ]
-  
+  ß
   render() {
     return (
       <div id="main">
+        <HBForm findHorns={this.handleHorns}/>
         {this.hornedBeastData.map(item => {
           return <HornedBeast
             title={item.title}
             src={item.image_url}
             alt={item.keyword}
             description={item.description}
-          // new HornedBeast(item.title, item.image_irl, ...)
+            horns={item.horns}
+            hornedBeastData={this.state.hornedBeastData}
           />
         })}
       </div>

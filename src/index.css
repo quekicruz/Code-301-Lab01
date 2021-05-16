@@ -5,19 +5,20 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  justify-content: center;
 }
 
 #hornedBeast {
-  margin: 37%;
   text-align: center;
 }
 
 #header {
-  margin-left: 38%;
+  text-align: center;
 }
 
 #formselect {
-  width: 25%;
+  text-align: center;
 }
 
 
